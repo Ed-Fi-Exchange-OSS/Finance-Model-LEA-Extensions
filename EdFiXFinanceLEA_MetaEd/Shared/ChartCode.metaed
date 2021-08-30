@@ -1,0 +1,4 @@
+Shared String ChartCode
+    documentation "A chart of account code value."
+    min length 1
+    max length 16

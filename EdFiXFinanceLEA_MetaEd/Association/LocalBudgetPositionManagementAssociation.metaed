@@ -1,0 +1,12 @@
+Association LocalBudgetPositionManagementAssociation
+    documentation "Budget amounts, Position Management association"
+    domain entity LocalBudget
+        documentation "Budget amounts"
+    domain entity PositionManagement
+        documentation "Position Management."
+    decimal FullTimeEquivalency
+        documentation "User-defined full-time equivalent ratio."
+        is optional
+        total digits 6
+        decimal places 3
+        min value 0

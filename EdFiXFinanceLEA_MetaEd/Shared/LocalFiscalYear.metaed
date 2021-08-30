@@ -1,0 +1,4 @@
+Shared Integer LocalFiscalYear
+    documentation "Local Fiscal Year"
+    min value 2000
+	  max value 2040

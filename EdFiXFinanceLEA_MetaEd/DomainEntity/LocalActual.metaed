@@ -1,0 +1,14 @@
+Domain Entity LocalActual
+    documentation "Expense/Revenue amounts"
+    domain entity LocalAccount
+        documentation "References the LocalAccount with which the LocalActual is associated."
+        is part of identity
+    shared integer AccountingPeriod
+        documentation "User defined accounting period, 0-12, 99"
+        is part of identity
+    currency Amount
+        documentation "Current balance for the account."
+        is required
+    descriptor FinancialCollection
+        documentation "The accounting period or grouping for which the amount is collected."
+        is optional
