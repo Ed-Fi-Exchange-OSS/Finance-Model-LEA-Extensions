@@ -29,7 +29,7 @@ For community members that would like to implement this ETL process, a few modif
 This script creates synonyms to act as symbolic names for SFUSD's linked server connection strings. These are entirely implementation-specific and will need to be modified before use to match connection strings to local source tables and views in PeopleSoft.
 
 0010-Descriptors.sql
-This script loads locally-defined StaffCharacteristicDescriptors from SFUSD's staff roster. Two modifications are requried here: 
+This script loads locally-defined StaffCharacteristicDescriptors from SFUSD's staff roster. Two modifications are required here: 
     1. The source table should be modified to match the local source table for such values.
     2. The Namespace should be modified to match the local Namespace value.
 
