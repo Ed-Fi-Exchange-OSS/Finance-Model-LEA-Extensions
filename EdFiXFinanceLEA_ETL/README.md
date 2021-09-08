@@ -34,7 +34,7 @@ This script loads locally-defined StaffCharacteristicDescriptors from SFUSD's st
     2. The Namespace should be modified to match the local Namespace value.
 
 1000-EdFiXFinance-Initalize.sql
-This script initializes he fiscal year and Local Education Agency information. Before running locally, modify the FiscalYear (line 12) to match your desired fiscal year and the LEA Id (line 15) to match your organization's Local Education Agency identifier in Ed-Fi.
+This script initializes the fiscal year and Local Education Agency information. Before running locally, modify the FiscalYear (line 12) to match your desired fiscal year and the LEA Id (line 15) to match your organization's Local Education Agency identifier in Ed-Fi.
 
 1100-EdFiXFinance-Merge.sql
 This script pulls in and updates the remaining financial data from the PeopleSoft source system. All source tables and views should be confirmed to follow the same structure used in SFUSD's implementation. Where there are discrepancies, the code will need to be modified.
