@@ -1,0 +1,24 @@
+Domain Entity ProgramDimension
+    documentation "NCES Program Dimension"
+    shared string ChartCode named Code
+        documentation "The code representation of the account Program dimension."
+        is part of identity
+    shared integer LocalFiscalYear named FiscalYear
+        documentation "The fiscal year for which the account Program dimension is valid."
+        is part of identity
+    shared string ChartCodeName named CodeName
+        documentation "A description of the account Program dimension."
+        is optional
+    descriptor CodeSource
+        documentation "Optional source of code."
+        is optional
+    descriptor ReportingTag
+        documentation "Optional tag for accountability reporting (e.g. ESSA)."
+        is optional collection
+    bool IsObsolete
+        documentation "Optional marker of Program dimension as obsolete."
+        is optional
+    domain entity ProgramDimension
+        documentation "Optional parent Program dimension reference."
+        is optional
+        role name Parent

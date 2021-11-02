@@ -1,0 +1,24 @@
+Domain Entity PositionManagement
+    documentation "Position Management."
+    string PositionNumber
+        documentation "Position Number."
+        is part of identity
+        min length 1
+        max length 16
+    domain entity EdFi.EducationOrganization
+        documentation "Education Organization. See department ID."
+        is part of identity
+    descriptor EdFi.StaffClassification
+        documentation "Staff Classification. See job code."
+        is part of identity
+    string PositionTitle
+        documentation "Position Title."
+        is optional
+        min length 1
+        max length 100
+    decimal FullTimeEquivalency
+        documentation "User-defined full-time equivalent ratio."
+        is optional
+        total digits 6
+        decimal places 3
+        min value 0

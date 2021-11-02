@@ -1,0 +1,4 @@
+Shared String ChartCodeName
+    documentation "Descriptive name for chart of account dimension."
+    min length 1
+    max length 100

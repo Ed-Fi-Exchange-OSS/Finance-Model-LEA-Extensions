@@ -1,0 +1,4 @@
+Shared Integer AccountingPeriod
+    documentation "User defined accounting period, 0-12, 99"
+    min value 0
+    max value 99

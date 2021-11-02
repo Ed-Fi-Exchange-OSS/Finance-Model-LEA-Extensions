@@ -1,0 +1,18 @@
+Interchange XFinance
+    documentation "Facilitate the loading of the EdFiXFinace extension domain entities."
+    use case documentation "Facilitate the loading of the EdFiXFinace extension domain entities."
+    domain entity BalanceSheetDimension
+    domain entity ChartOfAccount
+    domain entity Encumbrance
+    domain entity FunctionDimension
+    domain entity FundDimension
+    domain entity LocalAccount
+    domain entity LocalActual
+    domain entity LocalBudget
+    domain entity ObjectDimension
+    domain entity OperationalUnitDimension
+    domain entity PositionManagement
+    domain entity ProgramDimension
+    domain entity ProjectDimension
+    domain entity Projection
+    domain entity SourceDimension

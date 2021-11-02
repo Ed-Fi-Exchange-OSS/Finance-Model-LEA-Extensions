@@ -1,0 +1,60 @@
+Domain Entity ChartOfAccount
+    documentation "A valid combination of account dimensions under which financials are reported. This financial entity represents a funding source combined with its purpose and type of transaction. It provides a formal record of the debits and credits relating to the specific account."
+    shared string EdFi.AccountIdentifier
+        documentation "SEA populated Code value for the valid combination of account dimensions under which financials are reported."
+        is part of identity
+    shared integer LocalFiscalYear named FiscalYear
+        documentation "Fiscal year for the account"
+        is part of identity
+    domain entity EdFi.EducationOrganization
+        documentation "A reference to the education organization managing the chart of accounts."
+        is part of identity
+    descriptor AccountType
+        documentation "Type of Account such as Revenue, Expenditure, or Balance Sheet."
+        is required
+    shared string EdFi.AccountName
+        documentation "A descriptive name for the account"
+        is optional
+    domain entity BalanceSheetDimension
+        documentation "References the BalanceSheetDimension with which the ChartOfAccount is associated."
+        is optional
+        role name BalanceSheet
+        merge BalanceSheetBalanceSheetDimension.FiscalYear with FiscalYear
+    domain entity FunctionDimension
+        documentation "References the FunctionDimension with which the ChartOfAccount is associated."
+        is optional
+        role name Function
+        merge FunctionFunctionDimension.FiscalYear with FiscalYear
+    domain entity FundDimension
+        documentation "References the FundDimension with which the ChartOfAccount is associated."
+        is optional
+        role name Fund
+        merge FundFundDimension.FiscalYear with FiscalYear
+    domain entity ObjectDimension
+        documentation "References the ObjectDimension with which the ChartOfAccount is associated."
+        is optional
+        role name Object
+        merge ObjectObjectDimension.FiscalYear with FiscalYear
+    domain entity OperationalUnitDimension
+        documentation "References the OperationalUnitDimension with which the ChartOfAccount is associated."
+        is optional
+        role name OperationalUnit
+        merge OperationalUnitOperationalUnitDimension.FiscalYear with FiscalYear
+    domain entity ProgramDimension
+        documentation "References the ProgramDimension with which the ChartOfAccount is associated."
+        is optional
+        role name Program
+        merge ProgramProgramDimension.FiscalYear with FiscalYear
+    domain entity ProjectDimension
+        documentation "References the ProjectDimension with which the ChartOfAccount is associated."
+        is optional
+        role name Project
+        merge ProjectProjectDimension.FiscalYear with FiscalYear
+    domain entity SourceDimension
+        documentation "References the SourceDimension with which the ChartOfAccount is associated."
+        is optional
+        role name Source
+        merge SourceSourceDimension.FiscalYear with FiscalYear
+    common ReportingTag
+        documentation "Optional tag for accountability reporting (e.g. ESSA)."
+        is optional collection

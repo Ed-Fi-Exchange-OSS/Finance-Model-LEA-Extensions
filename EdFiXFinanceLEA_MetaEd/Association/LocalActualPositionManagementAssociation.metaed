@@ -1,0 +1,12 @@
+Association LocalActualPositionManagementAssociation
+    documentation "Actual amounts, Position Management association"
+    domain entity LocalActual
+        documentation "Actual amounts"
+    domain entity PositionManagement
+        documentation "Position Management."
+    decimal FullTimeEquivalency
+        documentation "User-defined full-time equivalent ratio."
+        is optional
+        total digits 6
+        decimal places 3
+        min value 0

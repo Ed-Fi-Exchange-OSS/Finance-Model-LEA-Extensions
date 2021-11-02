@@ -1,0 +1,2 @@
+Descriptor ReportingTag
+    documentation "A descriptor used at the dimension and/or chart of account levels to demote specific State needs for ESSA reporting. e.g., Federal, State and Local funding"

@@ -1,0 +1,8 @@
+Common ReportingTag
+    documentation "ReportingTag"
+    shared string TagValue
+        documentation "TagValue"
+        is optional
+    descriptor ReportingTag
+        documentation "ReportinTag Descriptor"
+        is part of identity
